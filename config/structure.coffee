@@ -7,33 +7,12 @@ module.exports =
     {
       title: "Index"
       id: "index"
-      location: "example#getting-started" # Supersonic module#view type navigation
-    }
-    {
-      title: "Settings"
-      id: "settings"
-      location: "example#settings"
-    }
-    {
-      title: "Internet"
-      id: "internet"
-      location: "http://google.com" # URLs are supported!
+      location: "FoodChoice#index" # Supersonic module#view type navigation
     }
   ]
 
   # rootView:
-  #   location: "example#getting-started"
-
-  preloads: [
-    {
-      id: "learn-more"
-      location: "example#learn-more"
-    }
-    {
-      id: "using-the-scanner"
-      location: "example#using-the-scanner"
-    }
-  ]
+  #   location: "FoodChoice#index"
 
   # drawers:
   #   left:
@@ -45,4 +24,4 @@ module.exports =
   #
   # initialView:
   #   id: "initialView"
-  #   location: "example#initial-view"
+  #   location: "FoodChoice#index"
