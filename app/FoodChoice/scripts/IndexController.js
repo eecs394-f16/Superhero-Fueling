@@ -1,23 +1,26 @@
 angular
-  .module('FoodChoice')
+  .module('foodChoice')
   .controller('IndexController', function($scope, supersonic) {
     supersonic.ui.tabs.hide();
     
-    $scope.FoodChoices = [
-      { 
-        "Cookie": 0
+    $scope.foodChoices = [
+      { "itemName": "Cookie",
+        "value": 0,
+        "url": "www.google.com"
       },
       {
-        "Carrot": 1
+        "itemName": "Carrot",
+        "value": 1,
+        "url":"www.google.com"
       }
     ]
 
     $scope.returnFoodScore = function (foodName) {
-      const foodNames = Object.keys($scope.FoodChoices)
+      // const foodNames = Object.keys($scope.FoodChoices)
 
-      for (i = 0; i < $scope.FoodChoices.length; i++) {
-        if (foodNames[i] === foodName) {
-          return $scope.FoodChoices[i][foodName]
+      for (i = 0; i < $scope.foodChoices.length; i++) {
+        if (foodChoices[i][itemName] == foodName) {
+          return $scope.FoodChoices[i][value]
         }
       }
     }

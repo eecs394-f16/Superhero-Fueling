@@ -1,5 +1,4 @@
 <div ng-controller="IndexController">
-
   <super-navbar>
     <super-navbar-title>
       Index
@@ -8,11 +7,10 @@
 
   <div class="padding">
     <h1>Pow! Here's your fresh module!</h1>
-<!--   <super-navigate location = "LetsFly#index">
-    <div>
-    	<button > Go </button>
-   	</div>
-  </super-navigate>  -->
+    <div ng-repeat=" (name,value,url) in foodChoices">
+      The item's name: {{name}}
+      The item's value: {{value}}
+      The item's location url is: {{url}}
+    </div>
   </div>
-
 </div>
