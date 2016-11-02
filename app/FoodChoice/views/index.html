@@ -1,14 +1,14 @@
-<div ng-controller="IndexController">
+<div ng-controller="IndexController" ng-init="">
   <super-navbar>
     <super-navbar-title>
       Index
     </super-navbar-title>
   </super-navbar>
-
+  <!-- {{ myname }} -->
   <div class="padding">
-    <h1>Pow! Here's your fresh module!</h1>
-    <div ng-repeat=" (name,value,url) in foodChoices">
-      <button>  {{name}}:{{value}}:{{url}} </button>
+    <div class = "join-button" ng-repeat= "item in foodChoices">
+        <!-- {{name.itemName}} -->
+         <img ng-src="{{item.url}}"/>
     </div>
 
     <button class="button button-full button-positive">Let's Fly!</button>
