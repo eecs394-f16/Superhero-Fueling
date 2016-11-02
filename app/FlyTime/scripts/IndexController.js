@@ -1,5 +1,5 @@
 angular
   .module('FlyTime')
   .controller('IndexController', function($scope, supersonic) {
-    // Controller functionality here
+    $scope.score = steroids.view.params.score;
   });
