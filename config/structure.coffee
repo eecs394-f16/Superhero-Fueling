@@ -14,14 +14,6 @@ module.exports =
   # rootView:
   #   location: "FoodChoice#index"
 
-  # drawers:
-  #   left:
-  #     id: "leftDrawer"
-  #     location: "example#drawer"
-  #     showOnAppLoad: false
-  #   options:
-  #     animation: "swingingDoor"
-  #
   # initialView:
   #   id: "initialView"
   #   location: "FoodChoice#index"
