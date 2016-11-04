@@ -21,6 +21,19 @@
     max-height: 100%;
 }
 
-.active{
+.active {
   opacity: 0.5;
+}
+
+.lets-fly-button{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 10vh;
+  width: 100%;
+  background-color: #00b5ff;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  border: none;
 }
