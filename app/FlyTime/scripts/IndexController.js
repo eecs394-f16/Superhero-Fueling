@@ -2,9 +2,19 @@ angular
   .module('FlyTime')
   .controller('IndexController', function($scope, $timeout, supersonic) {
     $scope.score = steroids.view.params.score;
-    $timeout(function() {
-  //   	var view = new supersonic.ui.View("powerpage#index");
-		// supersonic.ui.layers.push(view);
-		$scope.up = "hi"
-    }, 4000);
+    if($scope.score==1){
+    	$timeout(function() {
+	    	var myscore = $scope.score
+	    	var view = new supersonic.ui.View("powerpage#index?carryScore=1");
+			supersonic.ui.layers.push(view);
+    	}, 4000);
+    }
+    
+    else if($scope.score==0){
+    	$timeout(function() {
+	    	var myscore = $scope.score
+	    	var view = new supersonic.ui.View("powerpage#index?carryScore=0");
+			supersonic.ui.layers.push(view);
+    	}, 6000);
+    }
   });
