@@ -15,3 +15,8 @@
     padding: 10px 0 10px 0;
     font-weight: 200;
 }
+
+.animations {
+    max-width: 100%;
+    max-height: 100%;
+}

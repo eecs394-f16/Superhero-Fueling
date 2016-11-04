@@ -6,13 +6,11 @@
     </super-navbar-title>
   </super-navbar>
 
-  <div class="padding">
-    <div ng-if="score == 0">
-      <img src="/images/unsuccessful.gif" alt="Image not found">'
-    </div>
-    <div ng-if="score == 1">
-      <img src="/images/successful.gif" alt="Image not found">'
-    </div>
+  <div ng-if="score == 0">
+    <img class="animations" src="/images/unsuccessful.gif" alt="Image not found">
+  </div>
+  <div ng-if="score == 1">
+    <img class="animations" src="/images/successful.gif" alt="Image not found">
   </div>
 
 </div>
