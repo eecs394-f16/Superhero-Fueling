@@ -43,3 +43,14 @@
   color: white;
   border: none;
 }
+
+.play-again-button{
+  position: fixed;
+  top:50%;
+  right: 30%;
+  display: block;
+  background-color: #00b5ff;
+  font-size: 2em;
+  color: white;
+  border: none;
+}
