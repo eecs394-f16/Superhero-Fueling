@@ -4,6 +4,7 @@ angular
     supersonic.ui.tabs.hide();
 
     $scope.selectedScore = 0;
+    $scope.selected = null
     $scope.foodChoices = [ 
       {
         "itemName": "Cookie",
@@ -21,10 +22,13 @@ angular
       $scope.foodChoices.forEach(function(food) {
         if (food.itemName == name) {
           $scope.selectedScore = food.value;
+          $scope.selected = name
         }
       });
     }
-
+    $scope.isSelected = function(name) {
+      return $scope.selected === name;
+    }
     // $scope.returnFoodScore = function(foodName) {
     //   for (var i = 0; i < $scope.foodChoices.length; i++) {
     //     if (foodChoices[i][itemName] == foodName) {
