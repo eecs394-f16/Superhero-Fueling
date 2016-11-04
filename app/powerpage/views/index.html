@@ -1,0 +1,33 @@
+<div ng-controller="IndexController">
+
+  <super-navbar>
+    <super-navbar-title>
+      Index
+    </super-navbar-title>
+  </super-navbar>
+
+  <div ng-if="carryScore == 0"> <!-- The variable in the ng-if is not the variable passed through, but the angular variable defined in the controller -->
+  	<h3>
+  		Wrong Choice, better luck next time.
+  		<div style="text-align: center;">
+	  		<p>
+	  			<span align="center" style="display: inline-block; margin-top: 50px;">Power Meter</span>
+	  		</p>
+	  		<img class="animations_power" src="/images/emptybattery.jpg" alt="Image not found">
+	  	</div>
+  	</h3>
+    
+  </div>
+  <div ng-if="carryScore == 1">
+  	<h3>
+  		Good Job.
+  		<div style="text-align: center;">
+	  		<p>
+	  			<span align="center" style="display: inline-block; margin-top: 50px;">Power Meter</span>
+	  		</p>
+	  		<img class="animations_power" src="/images/fullbattery.jpg" alt="Image not found">
+	  	</div>
+  	</h3>
+  </div>
+
+</div>
