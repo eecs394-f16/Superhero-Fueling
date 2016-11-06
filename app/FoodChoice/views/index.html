@@ -1,7 +1,7 @@
 <div ng-controller="IndexController">
   <super-navbar>
     <super-navbar-title>
-      Superhero Fueling
+      Choose Your Foods!
     </super-navbar-title>
   </super-navbar>
 
@@ -10,7 +10,7 @@
         <img class="food" ng-src="{{item.url}}" ng-click="selectFood(item.itemName)" ng-class="{active : isSelected(item.itemName)}">
     </div>
 
-    <super-navigate location="FlyTime#index?score={{ selectedScore }}">
+    <super-navigate ng-show="selected" location="FlyTime#index?score={{ selectedScore }}">
       <button class="lets-fly-button">Let's Fly!</button>
     </super-navigate>
   </div>
