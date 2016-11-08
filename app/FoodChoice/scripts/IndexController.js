@@ -9,11 +9,131 @@ angular
       {
         "itemName": "Cookie",
         "url": "/images/Cookies.png",
-        "value": 0,
+        "value": 1,
         "selected": false
       },
       {
         "itemName": "Carrot",
+        "url": "/images/Carrots.png",
+        "value": 5,
+        "selected": false
+      },
+      {
+        "itemName": "GrilledChicken",
+        "url": "/images/Carrots.png",
+        "value": 6,
+        "selected": false
+      },
+      {
+        "itemName": "Cucumbers",
+        "url": "/images/Carrots.png",
+        "value": 5,
+        "selected": false
+      },
+      {
+        "itemName": "Cauliflower",
+        "url": "/images/Carrots.png",
+        "value": 5,
+        "selected": false
+      },
+      {
+        "itemName": "Broccoli",
+        "url": "/images/Carrots.png",
+        "value": 5,
+        "selected": false
+      },
+      {
+        "itemName": "Grapes",
+        "url": "/images/Carrots.png",
+        "value": 5,
+        "selected": false
+      },
+      {
+        "itemName": "Skim Milk",
+        "url": "/images/Carrots.png",
+        "value": 5,
+        "selected": false
+      },
+      {
+        "itemName": "Strawberries",
+        "url": "/images/Carrots.png",
+        "value": 5,
+        "selected": false
+      },
+      {
+        "itemName": "Orange",
+        "url": "/images/Carrots.png",
+        "value": 5,
+        "selected": false
+      },
+      {
+        "itemName": "Turkey",
+        "url": "/images/Carrots.png",
+        "value": 6,
+        "selected": false
+      },
+      {
+        "itemName": "Apples",
+        "url": "/images/Carrots.png",
+        "value": 5,
+        "selected": false
+      },
+      {
+        "itemName": "Soda",
+        "url": "/images/Carrots.png",
+        "value": 1,
+        "selected": false
+      },
+      {
+        "itemName": "Pasta",
+        "url": "/images/Carrots.png",
+        "value": 4,
+        "selected": false
+      },
+      {
+        "itemName": "Chocolate Bar",
+        "url": "/images/Carrots.png",
+        "value": 1,
+        "selected": false
+      },
+      {
+        "itemName": "Grilled Cheese Sandwhich",
+        "url": "/images/Carrots.png",
+        "value": 3,
+        "selected": false
+      },
+      {
+        "itemName": "French Fries",
+        "url": "/images/Carrots.png",
+        "value": 1,
+        "selected": false
+      },
+      {
+        "itemName": "Ice Cream",
+        "url": "/images/Carrots.png",
+        "value": 1,
+        "selected": false
+      },
+      {
+        "itemName": "Potato Chips",
+        "url": "/images/Carrots.png",
+        "value": 1,
+        "selected": false
+      },
+      {
+        "itemName": "Movie Popcorn",
+        "url": "/images/Carrots.png",
+        "value": 1,
+        "selected": false
+      },
+      {
+        "itemName": "Hot Dog",
+        "url": "/images/Carrots.png",
+        "value": 3,
+        "selected": false
+      },
+      {
+        "itemName": "Pepperoni Pizza",
         "url": "/images/Carrots.png",
         "value": 1,
         "selected": false
