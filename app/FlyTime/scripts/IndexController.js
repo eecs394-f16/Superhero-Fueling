@@ -5,13 +5,13 @@ angular
 
     $scope.score = steroids.view.params.score;
 
-    if ($scope.score == 1) {
+    if ($scope.score >= 8) {
     	$timeout(function() {
 	    	var myscore = $scope.score
 	    	var view = new supersonic.ui.View("powerpage#index?carryScore=1");
 				supersonic.ui.layers.push(view);
     	}, 4000);
-    } else if ($scope.score == 0) {
+    } else {
     	$timeout(function() {
 	    	var myscore = $scope.score
 	    	var view = new supersonic.ui.View("powerpage#index?carryScore=0");
