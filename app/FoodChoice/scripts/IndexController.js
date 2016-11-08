@@ -35,10 +35,10 @@ angular
         }
       });
 
-      supersonic.logger.log($scope.selected);
+      supersonic.logger.log($scope.selectedScore);
     };
 
     $scope.isSelected = function(name) {
-      return $scope.selected === name;
+      return $scope.selected.indexOf(name) != -1;
     };
   });
