@@ -7,7 +7,7 @@
 
   <div class="padding">
     <div class="food-div" ng-repeat="item in foodChoices">
-        <img class="food" ng-src="{{item.url}}" ng-click="selectFood(item.itemName)" ng-class="{active : isSelected(item.itemName)}">
+        <img class="food" ng-src="{{item.url}}" ng-click="toggleFood(item.itemName)" ng-class="{active : isSelected(item.itemName)}">
     </div>
 
     <super-navigate ng-show="selected" location="FlyTime#index?score={{ selectedScore }}">

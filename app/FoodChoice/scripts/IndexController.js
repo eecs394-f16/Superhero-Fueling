@@ -4,27 +4,38 @@ angular
     supersonic.ui.tabs.hide();
 
     $scope.selectedScore = 0;
-    $scope.selected = null;
+    $scope.selected = [];
     $scope.foodChoices = [ 
       {
         "itemName": "Cookie",
+        "url": "/images/Cookies.png",
         "value": 0,
-        "url": "/images/Cookies.png"
+        "selected": false
       },
       {
         "itemName": "Carrot",
+        "url": "/images/Carrots.png",
         "value": 1,
-        "url": "/images/Carrots.png"
+        "selected": false
       }
     ];
 
-    $scope.selectFood = function(name) {
+    $scope.toggleFood = function(name) {
       $scope.foodChoices.forEach(function(food) {
         if (food.itemName == name) {
-          $scope.selectedScore = food.value;
-          $scope.selected = name;
+          if (food.selected == true) {
+            $scope.selectedScore -= food.value;
+            $scope.selected.splice($scope.selected.indexOf(food.itemName), 1);
+            food.selected = false
+          } else if (food.selected == false) {
+            $scope.selectedScore += food.value;
+            $scope.selected.push(name);
+            food.selected = true
+          }
         }
       });
+
+      supersonic.logger.log($scope.selected);
     };
 
     $scope.isSelected = function(name) {
