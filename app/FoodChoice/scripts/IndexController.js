@@ -148,14 +148,21 @@ angular
             $scope.selected.splice($scope.selected.indexOf(food.itemName), 1);
             food.selected = false
           } else if (food.selected == false) {
-            $scope.selectedScore += food.value;
-            $scope.selected.push(name);
-            food.selected = true
+            if ($scope.selected.length == 3) {
+              var options = {
+                message: "You can only select up to 3 foods.",
+                buttonLabel: "Close"
+              };
+
+              supersonic.ui.dialog.alert("Too many foods!", options);
+            } else {
+              $scope.selectedScore += food.value;
+              $scope.selected.push(name);
+              food.selected = true
+            }
           }
         }
       });
-
-      supersonic.logger.log($scope.selectedScore);
     };
 
     $scope.isSelected = function(name) {
