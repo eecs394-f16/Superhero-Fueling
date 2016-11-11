@@ -33,7 +33,7 @@
 }
 
 .active {
-  opacity: 0.5;
+  border-color: blue;
 }
 
 .lets-fly-button {
