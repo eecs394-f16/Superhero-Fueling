@@ -146,6 +146,7 @@ angular
           if (food.selected == true) {
             $scope.selectedScore -= food.value;
             $scope.selected.splice($scope.selected.indexOf(food.itemName), 1);
+            $scope.selectedScoreAvg = Math.floor($scope.selectedScore/$scope.selected.length)
             food.selected = false
           } else if (food.selected == false) {
             if ($scope.selected.length == 3) {
@@ -158,6 +159,7 @@ angular
             } else {
               $scope.selectedScore += food.value;
               $scope.selected.push(name);
+              $scope.selectedScoreAvg = Math.floor($scope.selectedScore/$scope.selected.length)
               food.selected = true
             }
           }

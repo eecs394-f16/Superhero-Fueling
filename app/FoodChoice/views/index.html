@@ -10,7 +10,7 @@
         <img class="food" ng-src="{{item.url}}" ng-click="toggleFood(item.itemName)" ng-class="{active : isSelected(item.itemName)}">
     </div>
 
-    <super-navigate ng-show="selected.length != 0" location="FlyTime#index?score={{ selectedScore }}">
+    <super-navigate ng-show="selected.length != 0" location="FlyTime#index?score={{ selectedScoreAvg }}">
       <button class="lets-fly-button">Let's Fly!</button>
     </super-navigate>
   </div>
