@@ -5,7 +5,7 @@ angular
 
     $scope.score = steroids.view.params.score;
 
-    if ($scope.score >= 8) {
+    if ($scope.score >= 5) {
     	$timeout(function() {
 	    	var myscore = $scope.score
 	    	var view = new supersonic.ui.View("powerpage#index?carryScore=1");
