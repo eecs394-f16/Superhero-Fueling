@@ -8,133 +8,133 @@ angular
     $scope.foodChoices = [ 
       {
         "itemName": "Cookie",
-        "url": "/images/Cookies.png",
+        "url": "/images/Cookies.jpg",
         "value": 1,
         "selected": false
       },
       {
         "itemName": "Carrot",
-        "url": "/images/Carrots.png",
+        "url": "/images/carrots.jpg",
         "value": 5,
         "selected": false
       },
       {
         "itemName": "GrilledChicken",
-        "url": "/images/Carrots.png",
+        "url": "/images/grillChicken.png",
         "value": 6,
         "selected": false
       },
       {
         "itemName": "Cucumbers",
-        "url": "/images/Carrots.png",
+        "url": "/images/Cucumber.png",
         "value": 5,
         "selected": false
       },
       {
         "itemName": "Cauliflower",
-        "url": "/images/Carrots.png",
+        "url": "/images/cauliflower.png",
         "value": 5,
         "selected": false
       },
       {
         "itemName": "Broccoli",
-        "url": "/images/Carrots.png",
+        "url": "/images/Broccoli.png",
         "value": 5,
         "selected": false
       },
       {
         "itemName": "Grapes",
-        "url": "/images/Carrots.png",
+        "url": "/images/grapes.png",
         "value": 5,
         "selected": false
       },
       {
         "itemName": "Skim Milk",
-        "url": "/images/Carrots.png",
+        "url": "/images/milk.png",
         "value": 5,
         "selected": false
       },
       {
         "itemName": "Strawberries",
-        "url": "/images/Carrots.png",
+        "url": "/images/strawberry.png",
         "value": 5,
         "selected": false
       },
       {
         "itemName": "Orange",
-        "url": "/images/Carrots.png",
+        "url": "/images/Orange.png",
         "value": 5,
         "selected": false
       },
       {
         "itemName": "Turkey",
-        "url": "/images/Carrots.png",
+        "url": "/images/Turkey.png",
         "value": 6,
         "selected": false
       },
       {
         "itemName": "Apples",
-        "url": "/images/Carrots.png",
+        "url": "/images/apple.png",
         "value": 5,
         "selected": false
       },
       {
         "itemName": "Soda",
-        "url": "/images/Carrots.png",
+        "url": "/images/Soda.png",
         "value": 1,
         "selected": false
       },
       {
         "itemName": "Pasta",
-        "url": "/images/Carrots.png",
+        "url": "/images/Pasta.png",
         "value": 4,
         "selected": false
       },
       {
         "itemName": "Chocolate Bar",
-        "url": "/images/Carrots.png",
+        "url": "/images/Chocolate.png",
         "value": 1,
         "selected": false
       },
       {
         "itemName": "Grilled Cheese Sandwhich",
-        "url": "/images/Carrots.png",
+        "url": "/images/Cheese.png",
         "value": 3,
         "selected": false
       },
       {
         "itemName": "French Fries",
-        "url": "/images/Carrots.png",
+        "url": "/images/Fries.png",
         "value": 1,
         "selected": false
       },
       {
         "itemName": "Ice Cream",
-        "url": "/images/Carrots.png",
+        "url": "/images/Ice.png",
         "value": 1,
         "selected": false
       },
       {
         "itemName": "Potato Chips",
-        "url": "/images/Carrots.png",
+        "url": "/images/Chips.png",
         "value": 1,
         "selected": false
       },
       {
         "itemName": "Movie Popcorn",
-        "url": "/images/Carrots.png",
+        "url": "/images/Popcorn.png",
         "value": 1,
         "selected": false
       },
       {
         "itemName": "Hot Dog",
-        "url": "/images/Carrots.png",
+        "url": "/images/HotDog.png",
         "value": 3,
         "selected": false
       },
       {
         "itemName": "Pepperoni Pizza",
-        "url": "/images/Carrots.png",
+        "url": "/images/Pizza.png",
         "value": 1,
         "selected": false
       }
