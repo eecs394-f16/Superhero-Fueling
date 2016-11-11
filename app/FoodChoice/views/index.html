@@ -1,10 +1,9 @@
 <div ng-controller="IndexController">
   <super-navbar>
     <super-navbar-title>
-      Choose up to 3 foods!
+      Choose up to 3 food(s)!
     </super-navbar-title>
   </super-navbar>
-
   <div class="padding">
     <div class="food-div" ng-repeat="item in foodChoices">
         <img class="food" ng-src="{{item.url}}" ng-click="toggleFood(item.itemName)" ng-class="{active : isSelected(item.itemName)}">

@@ -158,9 +158,19 @@ angular
             } else {
               $scope.selectedScore += food.value;
               $scope.selected.push(name);
-              food.selected = true
+              food.selected = true;
             }
           }
+          // Update score
+          $scope.selectedScoreAvg = Math.floor($scope.selectedScore/$scope.selected.length);
+          // Update navigation bar title
+          var title_str;
+          if ($scope.selected.length == 3) {
+            title_str = 'Are you ready to fly?';
+          } else {
+            title_str = 'Choose up to ' + parseInt(3 - $scope.selected.length) + ' food(s)!';
+          }
+          supersonic.ui.navigationBar.update({title: title_str});
         }
       });
     };
