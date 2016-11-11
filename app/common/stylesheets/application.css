@@ -38,15 +38,16 @@
 
 .lets-fly-button {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  border-radius: 8px;
+  border: 1px solid #008CBA;
+  bottom: 2px;
+  right: 2px;
   height: 10vh;
-  width: 100%;
+  width: 99%;
   background-color: #00b5ff;
   text-align: center;
   font-size: 2em;
   color: white;
-  border: none;
 }
 
 .play-again-button{
@@ -57,5 +58,6 @@
   background-color: #00b5ff;
   font-size: 2em;
   color: white;
-  border: none;
+  border: 1px solid #008CBA;
+  border-radius: 4px;
 }

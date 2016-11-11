@@ -8,13 +8,13 @@ angular
     $scope.foodChoices = [ 
       {
         "itemName": "Cookie",
-        "url": "/images/Cookies.png",
+        "url": "/images/Cookies.jpg",
         "value": 1,
         "selected": false
       },
       {
         "itemName": "Carrot",
-        "url": "/images/Carrots.png",
+        "url": "/images/carrots.jpg",
         "value": 5,
         "selected": false
       },
