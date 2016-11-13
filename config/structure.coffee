@@ -12,7 +12,7 @@ module.exports =
   ]
 
   # rootView:
-  #   location: "FoodChoice#index"
+  #   location: "fooddata#index"
 
   # initialView:
   #   id: "initialView"

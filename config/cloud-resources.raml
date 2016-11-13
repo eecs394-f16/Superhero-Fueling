@@ -1,0 +1,113 @@
+#%RAML 0.8
+title: Steroids Data
+mediaType: application/json
+baseUri: https://rest-api.appgyver.com/v1
+
+traits:
+    - securedBySteroidsApiKey:
+        headers:
+          steroidsApiKey:
+            type: string
+            example: exampleapikey
+            default: c14ecaaf2932b884ac3ef4446ab0b4c30edd79a181295038eb6c0b1886f10210
+          steroidsAppId:
+            type: integer
+            example: 1234
+            default: 153952
+  
+schemas:
+  - FoodData_collection: '{"$schema":"http://json-schema.org/schema","title":"FoodData collection","type":"object","properties":{"objects":{"type":"array","items":{"$schema":"http://json-schema.org/schema","type":"object","description":"The canonical FoodData representation","properties":{"Fact":{"type":"string"},"Name":{"type":"string"},"URL":{"type":"string"},"Value":{"type":"integer"},"id":{"type":"string"},"Power":{"type":"string"},"SS":{"type":"string"},"Cal":{"type":"integer"},"F_g":{"type":"integer"},"F_p":{"type":"integer"},"SF_g":{"type":"integer"},"SF_p":{"type":"integer"},"CH_mg":{"type":"integer"},"CH_p":{"type":"integer"},"S_mg":{"type":"integer"},"S_p":{"type":"integer"},"C_g":{"type":"integer"},"C_p":{"type":"integer"},"Pr_g":{"type":"integer"},"EGL":{"type":"integer"},"selected":{"type":"boolean"}},"required":[]}}}}'
+  - FoodData_member: '{"$schema":"http://json-schema.org/schema","type":"object","description":"The canonical FoodData representation","properties":{"object":{"type":"object","properties":{"Fact":{"type":"string"},"Name":{"type":"string"},"URL":{"type":"string"},"Value":{"type":"integer"},"id":{"type":"string"},"Power":{"type":"string"},"SS":{"type":"string"},"Cal":{"type":"integer"},"F_g":{"type":"integer"},"F_p":{"type":"integer"},"SF_g":{"type":"integer"},"SF_p":{"type":"integer"},"CH_mg":{"type":"integer"},"CH_p":{"type":"integer"},"S_mg":{"type":"integer"},"S_p":{"type":"integer"},"C_g":{"type":"integer"},"C_p":{"type":"integer"},"Pr_g":{"type":"integer"},"EGL":{"type":"integer"},"selected":{"type":"boolean"}},"required":[]}}}'
+
+resourceTypes:
+  - dolan_db_collection:
+      usage: This resourceType should be used for any collection of items
+      is: [ securedBySteroidsApiKey ]
+      get:
+        description: |
+          {
+            "action": "collection"
+          }
+        responses:
+          200:
+            description: |
+              {
+                "rootKey": "objects"
+              }
+            body:
+              application/json:
+                schema: <<resourcePathName>>_collection # e.g cars
+      post:
+        description: |
+          {
+            "action": "create",
+            "rootKey": "object"
+          }
+        body:
+          application/json:
+            schema: <<resourcePathName>>_member
+        responses:
+          200:
+            description: |
+              {
+                "rootKey": "object"
+              }
+            body:
+              application/json:
+                schema: <<resourcePathName>>_member # e.g. car
+
+  - dolan_db_member:
+      usage: This resourceType should be used for any built.io item
+      is: [ securedBySteroidsApiKey ]
+      get:
+        description: |
+          {
+            "action": "find"
+          }
+        responses:
+          200:
+            description: |
+              {
+                "rootKey": "object"
+              }
+            body:
+              application/json:
+                schema: <<resourcePathName>>_member # e.g. car
+      put:
+        description: |
+          {
+            "action": "update",
+            "rootKey": "object"
+          }
+        body:
+          application/json:
+            schema: <<resourcePathName>>_member
+        responses:
+          200:
+            description: |
+              {
+                "rootKey": "object"
+              }
+            body:
+              application/json:
+                schema: <<resourcePathName>>_member
+      delete:
+        description: |
+          {
+            "action": "destroy"
+          }
+        responses:
+          200:
+
+
+/FoodData:
+  description: |
+    {
+      "resourceName": "FoodData",
+      "identifierKey": "id"
+    }
+  type: dolan_db_collection
+  /{id}:
+    type: dolan_db_member
+
+
