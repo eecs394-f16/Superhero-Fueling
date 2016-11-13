@@ -40,10 +40,10 @@
   position: fixed;
   border-radius: 8px;
   border: 1px solid #008CBA;
-  bottom: 2px;
-  right: 2px;
+  bottom: 3px;
+  right: 10%;
   height: 10vh;
-  width: 99%;
+  width: 80%;
   background-color: #00b5ff;
   text-align: center;
   font-size: 2em;
