@@ -10,8 +10,16 @@
 	  		<img class="animations_power" src="/images/emptybattery.jpg" alt="Image not found">
 	  	</div>
   	</h3>
-    
+    <div class = "wrapper">
+      <button class="play-again-button" ng-click="backToHome()">Play Again!</button>
+    </div>
+    <!-- <div class = "wrapper">
+     <super-navigate location="foodfacts#index">
+      <button class="play-again-button">Food Fact</button>
+    </super-navigate>
+    </div> -->
   </div>
+  
   <div ng-if="carryScore == 1">
   	<h3>
   		Good Job.
@@ -22,6 +30,14 @@
 	  		<img class="animations_power" src="/images/fullbattery.jpg" alt="Image not found">
 	  	</div>
   	</h3>
+    <div class = "wrapper">
+      <button class="play-again-button" ng-click="backToHome()">Play Again!</button>
+    </div>
+    <!-- <div class = "wrapper">
+    <super-navigate location="foodfacts#index">
+      <button class="play-again-button">Food Fact</button>
+    </super-navigate>
+    </div> -->
   </div>
 
 </div>
