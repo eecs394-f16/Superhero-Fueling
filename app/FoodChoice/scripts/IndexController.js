@@ -2,6 +2,13 @@ angular
   .module('FoodChoice')
   .controller('IndexController', function($scope, supersonic) {
     supersonic.ui.tabs.hide();
+    // $scope.foodChoices = []
+    // var Food = supersonic.data.model('FoodData');
+    // Food.findAll().then(function(allFood) {
+    //   for (i = 0; i < allFood.length; i++) {
+    //     $scope.foodChoices.push(allFood[i])
+    //   }
+    // });
 
     $scope.selectedScore = 0;
     $scope.selected = [];
