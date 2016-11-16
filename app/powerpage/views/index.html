@@ -1,43 +1,39 @@
 <div ng-controller="IndexController">
 
   <div ng-if="carryScore == 0"> <!-- The variable in the ng-if is not the variable passed through, but the angular variable defined in the controller -->
-  	<h3>
-  		Wrong Choice, better luck next time.
-  		<div style="text-align: center;">
-	  		<p>
-	  			<span align="center" style="display: inline-block; margin-top: 50px;">Power Meter</span>
-	  		</p>
-	  		<img class="animations_power" src="/images/emptybattery.jpg" alt="Image not found">
-	  	</div>
-  	</h3>
-    <div class = "wrapper">
-      <button class="play-again-button" ng-click="backToHome()">Play Again!</button>
+  	
+    <div class = "textbox">
+      SOME OF THOSE FOODS DID NOT GIVE ME ENOUGH ENERGY. WE CAN DO BETTER.
     </div>
-    <!-- <div class = "wrapper">
-     <super-navigate location="foodfacts#index">
-      <button class="play-again-button">Food Fact</button>
-    </super-navigate>
-    </div> -->
+  		<div style="text-align: center;">
+	  		<img class = "food_tile" src="/images/Carrots.png" alt="Image not found">
+        <img class = "food_tile" src="/images/High.png" alt="Image not found">
+        <p style="clear : both;"></p>
+        <img class = "food_tile" src="/images/Carrots.png" alt="Image not found">
+        <img class = "food_tile" src="/images/High.png" alt="Image not found">
+        <p style="clear : both;">
+        <img class = "food_tile" src="/images/Carrots.png" alt="Image not found">
+        <img class = "food_tile" src="/images/High.png" alt="Image not found">
+	  	</div>
   </div>
   
   <div ng-if="carryScore == 1">
-  	<h3>
-  		Good Job.
-  		<div style="text-align: center;">
-	  		<p>
-	  			<span align="center" style="display: inline-block; margin-top: 50px;">Power Meter</span>
-	  		</p>
-	  		<img class="animations_power" src="/images/fullbattery.jpg" alt="Image not found">
-	  	</div>
-  	</h3>
-    <div class = "wrapper">
-      <button class="play-again-button" ng-click="backToHome()">Play Again!</button>
+  	<div class = "textbox">
+      GOOD JOB !
     </div>
-    <!-- <div class = "wrapper">
-    <super-navigate location="foodfacts#index">
-      <button class="play-again-button">Food Fact</button>
-    </super-navigate>
-    </div> -->
+      <div style="text-align: center;">
+        <img class = "food_tile" src="/images/Carrots.png" alt="Image not found">
+        <img class = "food_tile" src="/images/High.png" alt="Image not found">
+        <p style="clear : both;"></p>
+        <img class = "food_tile" src="/images/Carrots.png" alt="Image not found">
+        <img class = "food_tile" src="/images/High.png" alt="Image not found">
+        <p style="clear : both;">
+        <img class = "food_tile" src="/images/Carrots.png" alt="Image not found">
+        <img class = "food_tile" src="/images/High.png" alt="Image not found">
+      </div>
+  </div>
+  <div class = "wrapper">
+      <button class="lets-fly-button" ng-click="backToHome()">Play Again!</button>
   </div>
 
 </div>
