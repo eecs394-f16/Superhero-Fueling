@@ -169,7 +169,7 @@ angular
             }
           }
           // Update score
-          $scope.selectedScoreAvg = Math.floor($scope.selectedScore/$scope.selected.length);
+          $scope.selectedScoreAvg = Math.floor($scope.selectedScore / $scope.selected.length);
           // Update navigation bar title
           var title_str;
           if ($scope.selected.length == 3) {

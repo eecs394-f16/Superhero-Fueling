@@ -3,7 +3,8 @@ angular
   .controller('IndexController', function($scope, $timeout, supersonic) {
     supersonic.ui.navigationBar.hide({animated: false});
 
-    $scope.carryScore = steroids.view.params.carryScore
+    $scope.carryScore = steroids.view.params.carryScore;
+    $scope.selected = steroids.view.params.selected;
     
     $scope.backToHome = function() {
       supersonic.ui.layers.popAll();
