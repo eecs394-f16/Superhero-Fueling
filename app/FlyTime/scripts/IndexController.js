@@ -11,11 +11,18 @@ angular
 	    	var view = new supersonic.ui.View("powerpage#index?carryScore=1");
 				supersonic.ui.layers.push(view);
     	}, 4000);
-    } else {
+    } else if ($scope.score < 5 && $scope.score > 2) {
     	$timeout(function() {
 	    	var myscore = $scope.score
 	    	var view = new supersonic.ui.View("powerpage#index?carryScore=0");
 				supersonic.ui.layers.push(view);
     	}, 6000);
+    }
+    else {
+      $timeout(function() {
+        var myscore = $scope.score
+        var view = new supersonic.ui.View("powerpage#index?carryScore=0");
+        supersonic.ui.layers.push(view);
+      }, 5000);
     }
   });
