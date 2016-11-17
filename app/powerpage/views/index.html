@@ -18,15 +18,10 @@
     </div>
   </div>
 
-  <div style="text-align: center;">
-    <img class = "food_tile" src="/images/Carrots.png" alt="Image not found">
-    <img class = "food_tile" src="/images/High.png" alt="Image not found">
+  <div style="text-align: center;" ng-repeat="item in data">
+    <img class="food_tile" ng-src="{{ item.URL }}" alt="Image not found">
+    <!--<img class = "food_tile" src="/images/High.png" alt="Image not found">-->
     <p style="clear : both;"></p>
-    <img class = "food_tile" src="/images/Chocolate.png" alt="Image not found">
-    <img class = "food_tile" src="/images/Low.png" alt="Image not found">
-    <p style="clear : both;">
-    <img class = "food_tile" src="/images/Pasta.png" alt="Image not found">
-    <img class = "food_tile" src="/images/Medium.png" alt="Image not found">
   </div>
 
   <div class = "wrapper">
