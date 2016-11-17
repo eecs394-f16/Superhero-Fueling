@@ -5,8 +5,8 @@
     </super-navbar-title>
   </super-navbar>
   <div class="padding">
-    <div class="food-div" ng-repeat="item in foodChoices">
-        <img class="food" ng-src="{{item.URL}}" ng-click="toggleFood(item.Name)" ng-class="{active : isSelected(item.Name)}">
+    <div class="food-div" ng-repeat="item in foodChoices" ng-click="toggleFood(item.Name)" >
+        <img class="food" ng-src="{{item.URL}}" ng-class="{active : isSelected(item.Name)}">
     </div>
 
     <super-navigate ng-show="selected.length != 0" location="FlyTime#index?score={{ selectedScoreAvg }}" ng-click="resetChoices()">
