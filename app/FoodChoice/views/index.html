@@ -6,10 +6,10 @@
   </super-navbar>
   <div class="padding">
     <div class="food-div" ng-repeat="item in foodChoices">
-        <img class="food" ng-src="{{item.url}}" ng-click="toggleFood(item.itemName)" ng-class="{active : isSelected(item.itemName)}">
+        <img class="food" ng-src="{{item.URL}}" ng-click="toggleFood(item.Name)" ng-class="{active : isSelected(item.Name)}">
     </div>
 
-    <super-navigate ng-show="selected.length != 0" location="FlyTime#index?score={{ selectedScoreAvg }}">
+    <super-navigate ng-show="selected.length != 0" location="FlyTime#index?score={{ selectedScoreAvg }}" ng-click="resetChoices()">
       <button class="lets-fly-button">Let's Fly!</button>
     </super-navigate>
   </div>
