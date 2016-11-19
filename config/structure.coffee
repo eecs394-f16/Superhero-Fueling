@@ -7,7 +7,7 @@ module.exports =
     {
       title: "Index"
       id: "index"
-      location: "FoodChoice#index" # Supersonic module#view type navigation
+      location: "TitleScreen#index" # Supersonic module#view type navigation
     }
   ]
 
@@ -16,4 +16,4 @@ module.exports =
 
   # initialView:
   #   id: "initialView"
-  #   location: "FoodChoice#index"
+  #   location: "TitleScreen#index"
