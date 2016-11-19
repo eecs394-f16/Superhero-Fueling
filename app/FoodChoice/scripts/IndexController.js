@@ -2,7 +2,9 @@ angular
   .module('FoodChoice')
   .controller('IndexController', function($scope, supersonic) {
     supersonic.ui.tabs.hide();
+
     $scope.foodChoices = [];
+
     var Food = supersonic.data.model('FoodData');
     Food.findAll().then(function(allFood) {
       supersonic.logger.log(allFood[0]); // TODO: Why does this line break app if deleted?
@@ -12,6 +14,7 @@ angular
     });
 
     $scope.selectedScore = 0;
+    $scope.selectedScoreAvg = 0;
     $scope.selected = [];
 
     $scope.toggleFood = function(name) {
@@ -52,7 +55,10 @@ angular
     $scope.isSelected = function(name) {
       return $scope.selected.indexOf(name) != -1;
     };
+
     $scope.resetChoices = function() {
-      return $scope.selected = []
+      $scope.selectedScore = 0;
+      $scope.selectedScoreAvg = 0;
+      $scope.selected = [];
     }
   });
