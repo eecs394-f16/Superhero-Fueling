@@ -4,6 +4,12 @@
   font-weight: 600;
 }
 
+@font-face{
+  font-family: 'Badaboom';
+  src:url('/fonts/BADABB__.TTF') format('truetype');
+  font-weight: bold;
+}
+
 .food-div{
     margin: auto;
     margin-bottom: 10px;
@@ -19,6 +25,11 @@
   margin-top: 30%;
 }
 
+.title-text {
+  font-family: "Badaboom";
+  font-size: 1.3em;
+}
+
 .title {
   margin-top: 10%;
 }
@@ -29,6 +40,8 @@
 }
 
 .textbox {
+    font-family: "Badaboom";
+    font-size: 1.3em;
     max-width: 100%;
     border : 3px solid black;
     padding: 10px;
