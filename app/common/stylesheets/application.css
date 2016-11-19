@@ -96,7 +96,7 @@
 
 .play-again-button{
   position: fixed;
-  top:50%;
+  top: 50%;
   right: 30%;
   display: block;
   background-color: #00b5ff;
@@ -110,4 +110,9 @@
     margin: auto;
     width: 100%;
     text-align: center;
+}
+
+.bottom-padding {
+    height: 50px;
+    width: 100%;
 }
