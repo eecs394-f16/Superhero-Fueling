@@ -105,3 +105,9 @@
   border: 1px solid #008CBA;
   border-radius: 4px;
 }
+
+.stills {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
