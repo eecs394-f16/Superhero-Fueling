@@ -20,11 +20,10 @@ angular
     $scope.toggleFood = function(id) {
       $scope.foodChoices.forEach(function(food) {
         if (food.id == id) {
-          if (food.selected == true) {
+          if ($scope.isSelected(food.id)) {
             $scope.selectedScore -= food.Value;
             $scope.selected.splice($scope.selected.indexOf(food.id), 1);
-            food.selected = false;
-          } else if (food.selected == false) {
+          } else {
             if ($scope.selected.length == 3) {
               var options = {
                 message: "You can only select up to 3 foods.",
@@ -35,7 +34,6 @@ angular
             } else {
               $scope.selectedScore += food.Value;
               $scope.selected.push(food.id);
-              food.selected = true;
             }
           }
           // Update score
