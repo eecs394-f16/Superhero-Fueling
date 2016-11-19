@@ -7,13 +7,13 @@ module.exports =
     {
       title: "Index"
       id: "index"
-      location: "TitleScreen#index" # Supersonic module#view type navigation
+      location: "FoodChoice#index" # Supersonic module#view type navigation
     }
   ]
 
   # rootView:
   #   location: "fooddata#index"
 
-  # initialView:
-  #   id: "initialView"
-  #   location: "TitleScreen#index"
+  initialView:
+    id: "initialView"
+    location: "TitleScreen#index"

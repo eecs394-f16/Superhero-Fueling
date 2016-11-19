@@ -1,7 +1,26 @@
 <div ng-controller="IndexController">
 
-  <div class="title">
+  <div ng-if="!timedout" class="title">
     <img class="title-img" src="/images/TitleScreen.PNG" alt="Image not found">
   </div>
 
+    <div ng-if="timedout" class="instruction">
+        <div class = "textbox">
+            <p></p>
+            <p></p>
+            <div><b>
+                YOU ARE NEEDED TO HELP FUEL UP SUPERMAN AND SAVE THE WORLD. MAKE SURE TO CHOOSE FOODS THAT PROVIDE SUPERMAN WITH LONG LASTING ENERGY.
+            </b></div>
+            <p></p>
+            <p></p>
+            <div><b>
+                BE CAREFUL, UNHEALTHY FOODS WILL CAUSE SUPERMAN TO RUN OUT OF ENERGY AND FAIL HIS MISSION.
+            <b></div>
+            <p></p>
+            <p></p>
+        </div>
+        <div>
+          <button ng-click="continue()" class="lets-fly-button">Got it</button>
+        </div>
+    </div>
 </div>
