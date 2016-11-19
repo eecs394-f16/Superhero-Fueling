@@ -17,9 +17,9 @@ angular
     $scope.selectedScoreAvg = 0;
     $scope.selected = [];
 
-    $scope.toggleFood = function(name) {
+    $scope.toggleFood = function(id) {
       $scope.foodChoices.forEach(function(food) {
-        if (food.Name == name) {
+        if (food.id == id) {
           if (food.selected == true) {
             $scope.selectedScore -= food.Value;
             $scope.selected.splice($scope.selected.indexOf(food.id), 1);
@@ -52,8 +52,8 @@ angular
       });
     };
 
-    $scope.isSelected = function(name) {
-      return $scope.selected.indexOf(name) != -1;
+    $scope.isSelected = function(id) {
+      return $scope.selected.indexOf(id) != -1;
     };
 
     $scope.resetChoices = function() {

@@ -5,8 +5,8 @@
     </super-navbar-title>
   </super-navbar>
   <div class="padding">
-    <div class="food-div" ng-repeat="item in foodChoices" ng-click="toggleFood(item.Name)" >
-        <img class="food" ng-src="{{item.URL}}" ng-class="{active : isSelected(item.Name)}">
+    <div class="food-div" ng-repeat="item in foodChoices" ng-click="toggleFood(item.id)" >
+        <img class="food" ng-src="{{item.URL}}" ng-class="{active : isSelected(item.id)}">
     </div>
 
     <super-navigate
