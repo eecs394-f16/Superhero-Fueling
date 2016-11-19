@@ -21,7 +21,7 @@
 
   <div style="text-align: center;" ng-repeat="item in data">
     <img class="food_tile" ng-src="{{ item.URL }}" alt="Image not found">
-    <!--<img class = "food_tile" src="/images/High.png" alt="Image not found">-->
+    <img class = "food_tile" src="{{ powerImageURL(item.Power) }}" alt="Image not found">
     <p style="clear : both;"></p>
   </div>
 

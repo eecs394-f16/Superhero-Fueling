@@ -18,4 +18,8 @@ angular
     $scope.backToHome = function() {
       supersonic.ui.layers.popAll();
     };
+
+    $scope.powerImageURL = function(power) {
+      return "/images/" + power + ".png";
+    }
   });
