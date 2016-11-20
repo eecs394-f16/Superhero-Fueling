@@ -1,11 +1,15 @@
 angular
   .module('FlyTime')
   .controller('IndexController', function($scope, $timeout, supersonic) {
-		supersonic.ui.navigationBar.hide({animated: false});
+    supersonic.ui.navigationBar.hide({animated: false});
+    $scope.score = steroids.view.params.score
+    $scope.selected = [
+      steroids.view.params.selected0,
+      steroids.view.params.selected1,
+      steroids.view.params.selected2
 
-    $scope.score = steroids.view.params.score;
-    $scope.selected = steroids.view.params.selected;
-	  var myscore = $scope.score;
+    ]
+
 
     if ($scope.score >= 5) {
     	$timeout(function() {

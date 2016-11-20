@@ -11,8 +11,7 @@
 
     <super-navigate
       ng-show="selected.length != 0"
-      location="FlyTime#index?score={{ selectedScoreAvg }}&selected={{ selected }}"
-      ng-click="resetChoices()"
+      location="FlyTime#index?score={{selectedScoreAvg}}&selected0={{selected[0]}}&selected1={{selected[1]}}&selected2={{selected[2]}}"
     >
       <button class="lets-fly-button">Let's Fly!</button>
     </super-navigate>

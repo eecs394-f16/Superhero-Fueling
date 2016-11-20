@@ -4,14 +4,14 @@ angular
     supersonic.ui.tabs.hide();
 
     $scope.foodChoices = [];
-
     var Food = supersonic.data.model('FoodData');
     Food.findAll().then(function(allFood) {
-      supersonic.logger.log(allFood[0]); // TODO: Why does this line break app if deleted?
       for (i = 0; i < allFood.length; i++) {
         $scope.foodChoices.push(allFood[i]);
       }
-    });
+      supersonic.logger.log($scope.foodChoices)
+    })
+
 
     $scope.selectedScore = 0;
     $scope.selectedScoreAvg = 0;
@@ -21,7 +21,6 @@ angular
       var clickedFood = $scope.foodChoices.find(function(food) {
         return food.id === id;
       });
-
       if ($scope.isSelected(clickedFood.id)) {
         $scope.selectedScore -= clickedFood.Value;
         $scope.selected.splice($scope.selected.indexOf(clickedFood.id), 1);
@@ -48,6 +47,7 @@ angular
         title_str = 'Choose up to ' + parseInt(3 - $scope.selected.length) + ' food(s)!';
       }
       supersonic.ui.navigationBar.update({title: title_str});
+  
     };
 
     $scope.isSelected = function(id) {
