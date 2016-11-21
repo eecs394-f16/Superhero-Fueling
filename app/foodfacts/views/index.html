@@ -1,7 +1,18 @@
 <div ng-controller="IndexController">
+	<super-navbar>
+    	<super-navbar-title>
+      	Facts about your choice
+    	</super-navbar-title>
+  	</super-navbar>
 
-  <div class="padding">
-    <h1>Pow! Here's your fresh module!</h1>
-  </div>
+    <div ng-repeat="item in data">
+    	<img class="food_tile" ng-src="{{ item.URL }}" alt="Image not found">
+    	<p>
+    		<h1> Here are the various facts associated with the food item: </h1>
+    	{{item.Fact}}
+    	</p>
+  	</div>
+
+	<div class="bottom-padding"></div>
 
 </div>

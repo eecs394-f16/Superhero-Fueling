@@ -16,11 +16,13 @@ angular
     $scope.selectedScore = 0;
     $scope.selectedScoreAvg = 0;
     $scope.selected = [];
+    $scope.selectedFood = [];
 
     $scope.toggleFood = function(id) {
       var clickedFood = $scope.foodChoices.find(function(food) {
         return food.id === id;
       });
+      
       if ($scope.isSelected(clickedFood.id)) {
         $scope.selectedScore -= clickedFood.Value;
         $scope.selected.splice($scope.selected.indexOf(clickedFood.id), 1);
@@ -37,6 +39,7 @@ angular
           $scope.selected.push(clickedFood.id);
         }
       }
+      
       // Update score
       $scope.selectedScoreAvg = Math.floor($scope.selectedScore / $scope.selected.length);
       // Update navigation bar title
