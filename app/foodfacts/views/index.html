@@ -5,11 +5,14 @@
     	</super-navbar-title>
   	</super-navbar>
 
-    <div ng-repeat="item in data">
-    	<img class="food_tile" ng-src="{{ item.URL }}" alt="Image not found">
-    	<img class="powermeter" ng-src="{{ '/images/' + item.Power + '.png' }}" alt="Image not found">
-  	</div>
+	<div class="padding">
+		<div ng-repeat="item in data">
+			<img class="food_tile" ng-src="{{ item.URL }}" alt="Image not found">
+			<img class="powermeter" ng-src="{{ '/images/' + item.Power + '.png' }}" alt="Image not found">
+			<p>{{ item.Fact }}</p>
+		</div>
 
-	<div class="bottom-padding"></div>
+		<div class="bottom-padding"></div>
+	</div>
 
 </div>
