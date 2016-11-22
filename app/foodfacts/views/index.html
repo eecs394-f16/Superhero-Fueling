@@ -6,11 +6,9 @@
   	</super-navbar>
 
 	<div class="padding">
-		<div ng-repeat="item in data">
-			<img class="food_tile" ng-src="{{ item.URL }}" alt="Image not found">
-			<img class="powermeter" ng-src="{{ '/images/' + item.Power + '.png' }}" alt="Image not found">
-			<p>{{ item.Fact }}</p>
-		</div>
+		<img class="food_tile" ng-src="{{ data.URL }}" alt="Image not found">
+		<img class="powermeter" ng-src="{{ '/images/' + data.Power + '.png' }}" alt="Image not found">
+		<p>{{ data.Fact }}</p>
 
 		<div class="bottom-padding"></div>
 	</div>
