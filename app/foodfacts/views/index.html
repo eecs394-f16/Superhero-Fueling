@@ -7,10 +7,7 @@
 
     <div ng-repeat="item in data">
     	<img class="food_tile" ng-src="{{ item.URL }}" alt="Image not found">
-    	<p>
-    		<h1> Here are the various facts associated with the food item: </h1>
-    	{{item.Fact}}
-    	</p>
+    	<img class="powermeter" ng-src="{{ '/images/' + item.Power + '.png' }}" alt="Image not found">
   	</div>
 
 	<div class="bottom-padding"></div>

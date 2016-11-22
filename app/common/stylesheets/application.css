@@ -72,11 +72,7 @@
 }
 
 .food_tile{
-    float: left;
-    width: 48%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 0.5em;
+    width: 100%;
 }
 
 .power_tile{
@@ -128,4 +124,8 @@
 .bottom-padding {
     height: 50px;
     width: 100%;
+}
+
+.powermeter {
+    max-width: 100%;
 }
