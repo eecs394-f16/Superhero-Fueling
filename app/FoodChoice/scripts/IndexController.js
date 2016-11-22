@@ -9,14 +9,13 @@ angular
       for (i = 0; i < allFood.length; i++) {
         $scope.foodChoices.push(allFood[i]);
       }
-      supersonic.logger.log($scope.foodChoices)
-    })
+      supersonic.logger.log($scope.foodChoices);
+    });
 
 
     $scope.selectedScore = 0;
     $scope.selectedScoreAvg = 0;
     $scope.selected = [];
-    $scope.selectedFood = [];
 
     $scope.toggleFood = function(id) {
       var clickedFood = $scope.foodChoices.find(function(food) {
@@ -56,10 +55,4 @@ angular
     $scope.isSelected = function(id) {
       return $scope.selected.indexOf(id) != -1;
     };
-
-    $scope.resetChoices = function() {
-      $scope.selectedScore = 0;
-      $scope.selectedScoreAvg = 0;
-      $scope.selected = [];
-    }
   });

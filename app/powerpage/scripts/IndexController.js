@@ -31,8 +31,11 @@ angular
     // }
 
     $scope.backToHome = function() {
-      $scope.selected = []
-      supersonic.ui.layers.popAll();
+      $scope.selected = [];
+      view = new supersonic.ui.View("FoodChoice#index");
+      view.start("index").then( function(startedView) {
+        supersonic.ui.layers.replace(startedView);
+      });
     };
 
     $scope.powerImageURL = function(power) {
