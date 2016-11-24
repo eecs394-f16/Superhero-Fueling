@@ -55,4 +55,16 @@ angular
     $scope.isSelected = function(id) {
       return $scope.selected.indexOf(id) != -1;
     };
+
+    $scope.resetChoices = function() {
+      $scope.selectedScore = 0;
+      $scope.selectedScoreAvg = 0;
+      $scope.selected = [];
+    }
+
+    // Reset choices when powerpage "play again" is clicked
+    supersonic.data.channel('reset').subscribe(function(message) {
+      $scope.resetChoices();
+      supersonic.logger.log($scope.selected); // active class does not reset if line is removed
+    });
   });
