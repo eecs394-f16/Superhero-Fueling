@@ -14,12 +14,12 @@ angular
     	$timeout(function() {
 	    	var view = new supersonic.ui.View("powerpage#index?carryScore=2&selected0=" + $scope.selected[0] + "&selected1=" + $scope.selected[1] + "&selected2=" + $scope.selected[2]);
 				supersonic.ui.layers.push(view);
-    	}, 4000);
+    	}, 6500);
     } else if ($scope.score < 5 && $scope.score > 2) {
     	$timeout(function() {
 	    	var view = new supersonic.ui.View("powerpage#index?carryScore=1&selected0=" + $scope.selected[0] + "&selected1=" + $scope.selected[1] + "&selected2=" + $scope.selected[2]);
 				supersonic.ui.layers.push(view);
-    	}, 6000);
+    	}, 7500);
     }
     else {
       $timeout(function() {
