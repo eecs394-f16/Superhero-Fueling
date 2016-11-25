@@ -21,12 +21,23 @@
     <img class="stills" src="/images/successful-still-card.png" alt="Image not found">
   </div>
 
-  <div style="text-align: center;" ng-repeat="item in data">
-    <super-navigate location="foodfacts#index?selectedId={{item.id}}">
-      <img class="food_tile" ng-src="{{ item.URL }}" alt="Image not found">
-      <img class = "food_tile" src="{{ powerImageURL(item.Power) }}" alt="Image not found">
-    </super-navigate>
-    <p style="clear : both;"></p>
+  <div>
+    <ul class="align-images">
+      <li ng-repeat="item in data">
+        <super-navigate location="foodfacts#index?selectedId={{item.id}}">
+          <img class="food-tile-align" ng-src="{{ item.URL }}" alt="Image not found">
+          <!-- <img class = "food-tile-align" src="{{ powerImageURL(item.Power) }}" alt="Image not found"> -->
+        </super-navigate>
+      </li>
+     </ul> 
+     <!-- For the power bars -->
+     <ul class="align-images">
+      <li ng-repeat="item in data">
+        <super-navigate location="foodfacts#index?selectedId={{item.id}}">
+          <img class = "food-tile-align" src="{{ powerImageURL(item.Power) }}" alt="Image not found">
+        </super-navigate>
+      </li>
+     </ul> 
   </div>
 
   <div class="bottom-padding"></div>
