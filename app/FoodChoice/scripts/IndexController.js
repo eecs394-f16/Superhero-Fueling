@@ -1,9 +1,14 @@
 angular
   .module('FoodChoice')
-  .controller('IndexController', function($scope, supersonic) {
+  .controller('IndexController', function($scope, supersonic, $http) {
     supersonic.ui.tabs.hide();
 
     $scope.foodChoices = [];
+
+    $http.get('/data/data.json').then(function(response) {
+      $scope.foodChoices = response.data;
+    });
+
     var Food = supersonic.data.model('FoodData');
     Food.findAll().then(function(allFood) {
       for (i = 0; i < allFood.length; i++) {
