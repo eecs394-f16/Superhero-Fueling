@@ -6,9 +6,9 @@ angular
     $scope.selected = steroids.view.params.selectedId;
     $scope.data = {};
 
-    $http.get('/data/data.json', function(response) {
+    $http.get('/data/data.json').then(function(response) {
       response.data.forEach(function(food) {
-        if (food.id == $scope.data) {
+        if (food.id == $scope.selected) {
           $scope.data = food;
         }
       });
