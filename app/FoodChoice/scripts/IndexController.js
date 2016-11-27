@@ -9,15 +9,6 @@ angular
       $scope.foodChoices = response.data;
     });
 
-    var Food = supersonic.data.model('FoodData');
-    Food.findAll().then(function(allFood) {
-      for (i = 0; i < allFood.length; i++) {
-        $scope.foodChoices.push(allFood[i]);
-      }
-      supersonic.logger.log($scope.foodChoices);
-    });
-
-
     $scope.selectedScore = 0;
     $scope.selectedScoreAvg = 0;
     $scope.selected = [];

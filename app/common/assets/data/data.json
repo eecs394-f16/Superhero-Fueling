@@ -21,7 +21,8 @@
     "P_g":0,
     "P_s":"Low",
     "EGL":3,
-    "URL":"/images/apple.png"
+    "URL":"/images/apple.png",
+    "id":1
   },
   {
     "Name":"broccoli",
@@ -45,7 +46,8 @@
     "P_g":3,
     "P_s":"Low",
     "EGL":3,
-    "URL":"/images/Broccoli.png"
+    "URL":"/images/Broccoli.png",
+    "id":2
   },
   {
     "Name":"carrot",
@@ -69,7 +71,8 @@
     "P_g":0,
     "P_s":"Low",
     "EGL":0,
-    "URL":"/images/carrots.jpg"
+    "URL":"/images/carrots.jpg",
+    "id":3
   },
   {
     "Name":"cauliflower",
@@ -93,7 +96,8 @@
     "P_g":2,
     "P_s":"Low",
     "EGL":2,
-    "URL":"/images/cauliflower.png"
+    "URL":"/images/cauliflower.png",
+    "id":4
   },
   {
     "Name":"chocolate bar",
@@ -117,7 +121,8 @@
     "P_g":4,
     "P_s":"Medium",
     "EGL":14,
-    "URL":"/images/Chocolate.png"
+    "URL":"/images/Chocolate.png",
+    "id":5
   },
   {
     "Name":"cookie",
@@ -141,7 +146,8 @@
     "P_g":1,
     "P_s":"Low",
     "EGL":5,
-    "URL":"/images/Cookies.jpg"
+    "URL":"/images/Cookies.jpg",
+    "id":6
   },
   {
     "Name":"cucumber",
@@ -165,7 +171,8 @@
     "P_g":0,
     "P_s":"Low",
     "EGL":1,
-    "URL":"/images/Cucumber.png"
+    "URL":"/images/Cucumber.png",
+    "id":7
   },
   {
     "Name":"French fries",
@@ -189,7 +196,8 @@
     "P_g":4,
     "P_s":"Medium",
     "EGL":22,
-    "URL":"/images/Fries.png"
+    "URL":"/images/Fries.png",
+    "id":8
   },
   {
     "Name":"grapes",
@@ -213,7 +221,8 @@
     "P_g":1,
     "P_s":"Low",
     "EGL":9,
-    "URL":"/images/grapes.png"
+    "URL":"/images/grapes.png",
+    "id":9
   },
   {
     "Name":"grill cheese",
@@ -237,7 +246,8 @@
     "P_g":11,
     "P_s":"High",
     "EGL":19,
-    "URL":"/images/Cheese.png"
+    "URL":"/images/Cheese.png",
+    "id":10
   },
   {
     "Name":"grill chicken",
@@ -261,7 +271,8 @@
     "P_g":9,
     "P_s":"Medium",
     "EGL":1,
-    "URL":"/images/grillChicken.png"
+    "URL":"/images/grillChicken.png",
+    "id":11
   },
   {
     "Name":"hot dog",
@@ -285,7 +296,8 @@
     "P_g":12,
     "P_s":"High",
     "EGL":15,
-    "URL":"/images/HotDog.png"
+    "URL":"/images/HotDog.png",
+    "id":12
   },
   {
     "Name":"ice cream",
@@ -309,7 +321,8 @@
     "P_g":2,
     "P_s":"Low",
     "EGL":8,
-    "URL":"/images/Ice.png"
+    "URL":"/images/Ice.png",
+    "id":13
   },
   {
     "Name":"milk",
@@ -333,7 +346,8 @@
     "P_g":10,
     "P_s":"High",
     "EGL":9,
-    "URL":"/images/milk.png"
+    "URL":"/images/milk.png",
+    "id":14
   },
   {
     "Name":"orange",
@@ -357,7 +371,8 @@
     "P_g":1,
     "P_s":"Low",
     "EGL":5,
-    "URL":"/images/Orange.png"
+    "URL":"/images/Orange.png",
+    "id":15
   },
   {
     "Name":"pasta",
@@ -381,7 +396,8 @@
     "P_g":2,
     "P_s":"Low",
     "EGL":8,
-    "URL":"/images/Pasta.png"
+    "URL":"/images/Pasta.png",
+    "id":16
   },
   {
     "Name":"pizza",
@@ -405,7 +421,8 @@
     "P_g":14,
     "P_s":"High",
     "EGL":20,
-    "URL":"/images/Pizza.png"
+    "URL":"/images/Pizza.png",
+    "id":17
   },
   {
     "Name":"popcorn",
@@ -429,7 +446,8 @@
     "P_g":1,
     "P_s":"Low",
     "EGL":2,
-    "URL":"/images/Popcorn.png"
+    "URL":"/images/Popcorn.png",
+    "id":18
   },
   {
     "Name":"potato chips",
@@ -453,7 +471,8 @@
     "P_g":15,
     "P_s":"High",
     "EGL":54,
-    "URL":"/images/Chips.png"
+    "URL":"/images/Chips.png",
+    "id":19
   },
   {
     "Name":"roasted turkey",
@@ -477,7 +496,8 @@
     "P_g":37,
     "P_s":"High",
     "EGL":0,
-    "URL":"/images/Turkey.png"
+    "URL":"/images/Turkey.png",
+    "id":20
   },
   {
     "Name":"soda",
@@ -501,11 +521,12 @@
     "P_g":0,
     "P_s":"Low",
     "EGL":0,
-    "URL":"/images/Soda.png"
+    "URL":"/images/Soda.png",
+    "id":21
   },
   {
     "Name":"strawberry",
-    "Fact":"Superman can fuel up in Vitamin C with strawsberries. This food is very low in Saturated Fat, Cholesterol and Sodium. It is also a good source of Folate and Potassium, and a very good source of Dietary Fiber, Vitamin C and Manganese.",
+    "Fact":"Superman can fuel up in Vitamin C with strawberries. This food is very low in Saturated Fat, Cholesterol and Sodium. It is also a good source of Folate and Potassium, and a very good source of Dietary Fiber, Vitamin C and Manganese.",
     "Value":5,
     "Power":"High",
     "SS":"1 cup (152g)",
@@ -525,6 +546,7 @@
     "P_g":1,
     "P_s":"Low",
     "EGL":3,
-    "URL":"/images/strawberry.png"
+    "URL":"/images/strawberry.png",
+    "id":22
   }
 ]
