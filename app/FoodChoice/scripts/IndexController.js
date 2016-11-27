@@ -1,17 +1,13 @@
 angular
   .module('FoodChoice')
-  .controller('IndexController', function($scope, supersonic) {
+  .controller('IndexController', function($scope, supersonic, $http) {
     supersonic.ui.tabs.hide();
 
     $scope.foodChoices = [];
-    var Food = supersonic.data.model('FoodData');
-    Food.findAll().then(function(allFood) {
-      for (i = 0; i < allFood.length; i++) {
-        $scope.foodChoices.push(allFood[i]);
-      }
-      supersonic.logger.log($scope.foodChoices);
-    });
 
+    $http.get('/data/data.json').then(function(response) {
+      $scope.foodChoices = response.data;
+    });
 
     $scope.selectedScore = 0;
     $scope.selectedScoreAvg = 0;
