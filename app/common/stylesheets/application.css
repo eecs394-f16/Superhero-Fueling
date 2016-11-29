@@ -51,7 +51,7 @@
 
 .animations {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 96%;
 }
 
 .title-img {
@@ -60,8 +60,8 @@
 }
 
 .animations-krypto {
-    max-width: 85%;
-    max-height: 60%;
+    max-width: 100%;
+    max-height: 100%;
     margin: auto;
 }
 
@@ -141,5 +141,9 @@
 }
 
 .powermeter {
-    width: 100%;
+    max-width: 100%;
+}
+
+.touch-food {
+    text-align: center;
 }
