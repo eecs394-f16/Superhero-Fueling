@@ -75,19 +75,19 @@
     width: 100%;
 }
 
-.food-tile-align{
-  /*margin: 0 auto;*/
-  float: left;
-  padding-right: 4px;
+.tab{
+  height: 33%;
   width: 33%;
-  /*height: 100px;*/
+}
+.food-tile-align{
+  max-width: 75%;
 
 
 }
-.align-images li{
+/*.align-images li{
   display: inline;
   padding-top: 20px; 
-}
+}*/
 
 .power_tile{
     float: right;
