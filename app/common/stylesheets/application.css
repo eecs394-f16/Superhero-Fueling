@@ -51,7 +51,7 @@
 
 .animations {
     max-width: 100%;
-    max-height: 96%;
+    max-height: 100%;
 }
 
 .title-img {
@@ -74,6 +74,20 @@
 .food_tile{
     width: 100%;
 }
+
+.tab{
+  height: 33%;
+  width: 33%;
+}
+.food-tile-align{
+  max-width: 75%;
+
+
+}
+/*.align-images li{
+  display: inline;
+  padding-top: 20px; 
+}*/
 
 .power_tile{
     float: right;
@@ -129,4 +143,8 @@
 
 .powermeter {
     max-width: 100%;
+}
+
+.touch-food {
+    text-align: center;
 }
