@@ -37,7 +37,7 @@ The completed user story cards are placed under the label "Production". The Prod
 
 ## Team
 
-This app was created for the Northwestern EECS 213 Fall 2016 Course by Team Green:
+This app was created for the Northwestern EECS 394 Fall 2016 Course by Team Green:
 
 1. Aagam Shah
 2. Agam Gupta
