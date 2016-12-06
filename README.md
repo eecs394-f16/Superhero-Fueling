@@ -11,6 +11,8 @@ Kids can start the app and look at a list of food choices they can eat. They can
 Clone this repostory, then
 
 	npm install
+	
+> Installation instructions apply only to OS X and Ubuntu. Development environment not tested on other platforms, including Microsoft Windows.
 
 ## Usage
 
