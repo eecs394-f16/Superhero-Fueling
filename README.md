@@ -12,10 +12,16 @@ Clone this repostory, then
 The Appgyver Steroids tooling makes it easy to run the application on a mobile device not only for developers, but also for potential clients or testers as well. Once installed, simply run
 
 	steroids connect
+
+  *If there is an error during steroids connect, npm install the missing dependencies using npm.
 	
 and a QR code screen should appear in your browser. Then, download the Scanner app from the [App Store](https://itunes.apple.com/us/app/appgyver-scanner/id575076515?mt=8) (iOS) or the [Google Play Store](https://play.google.com/store/apps/details?id=com.appgyver.freshandroid&hl=en) (Android) and use it to scan the QR code. The app will load on your device!
 
 Anyone else who downloads the Scanner app, such as a client or a tester, can also scan the QR code and try the app on their device as well. For more documentaiton on Appgyver Steroids, [look here](https://play.google.com/store/apps/details?id=com.appgyver.freshandroid&hl=en).
+
+## Pushing to Cloud
+
+The Appgyver cloud functionality makes it simple to share a qr-code via an http link. To push the appgyver application to the cloud, run steroids connect and wait for the screen with the qr code to appear. From here, select "cloud" from the menu on top and click "deploy to cloud." Once this is done, click "open cloud share page." This will redirect you to a sharable html page that you can use to publicize the qr-code. 
 
 ## Data
 
