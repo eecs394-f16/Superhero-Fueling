@@ -2,10 +2,9 @@
 ![Logo](app/common/assets/images/Title.PNG)
 ### *A way to encourage children to eat better.*
 
-The kids love their superhero! They follow everything their superhero does. So here is the app to encourage kids eat better.
+Kids love their superhero! They follow everything their superhero does. Here is an app that can encourage kids to eat better.
 
-Here is how it goes... The kid starts the app and looks at a list of food choices he can eat. He can select upto 3 food items and see how well can their superhero save the city, eating the food they selected. Healthier choices helps superhero save the day. Bad choices fails to power their superhero. The kids also learn fun facts about their food choices and eat better each time they play the game!!
-
+Kids can start the app and look at a list of food choices they can eat. They can select up to 3 food items and see how those choices affect their superhero. Healthier choices help our superhero save the day. Bad choices harm our superhero. Kids can also learn fun facts about their food choices and eat better each time they play the game!
 
 ## Install
 
@@ -69,7 +68,7 @@ Currently, the data is stored inside the `app/common/assets/data/data.json` file
 * "Name": The name of the food (string)
 * "Fact": Helpful facts associated with the food (string)
 * "Value": Point value associated with the food. Average of all selected food point values determines whether the user sees a successful animation, a falling animation, or a kryptonite image (number).
-* "Power": An indication of how helpful the food is to superman (string: "High", "Medium", or "Low")
+* "Power": An indication of how helpful the food is to the superhero (string: "High", "Medium", or "Low")
 * "SS": Serving size (string)
 * "Cal": Calories (number)
 * "F_g": Fat (number, in grams)
