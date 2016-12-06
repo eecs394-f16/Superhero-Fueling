@@ -37,6 +37,13 @@ Link to the Trello board : https://trello.com/b/GpERMUd6/user-stories
 
 ## Team
 
+Team Green :
+
+1. Aagam Shah
+2. Agam Gupta
+3. Collin Pham
+4. Joon Park
+
 ## License
 
 **The MIT License (MIT)**
