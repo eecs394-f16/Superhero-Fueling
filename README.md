@@ -27,13 +27,12 @@ The Appgyver cloud functionality makes it simple to share a qr-code via an http 
 
 TODO: Explain current status of json file data
 
-## Status/Known Issues
+## Status
 
-The status of the app features implemented are maintained using the Trello Board. More information about Trello on (https://trello.com/home).
+The status of the app features implemented are maintained using [our team's Trello Board](https://trello.com/b/GpERMUd6/user-stories
+). More information about Trello on (https://trello.com/home).
 
 The completed user story cards are placed under the label "Production". The Product backlog presents the user stories planned for the next version of the app.
-
-Link to the Trello board : https://trello.com/b/GpERMUd6/user-stories
 
 ## Team
 
