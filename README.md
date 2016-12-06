@@ -1,5 +1,6 @@
 # Superhero-Fueling
-A way to encourage children to eat better.
+![Logo](app/common/assets/images/Title.png)
+### *A way to encourage children to eat better.*
 
 ## Install
 
@@ -12,10 +13,10 @@ Clone this repostory, then
 The Appgyver Steroids tooling makes it easy to run the application on a mobile device not only for developers, but also for potential clients or testers as well. Once installed, simply run
 
 	steroids connect
-
-  *Some have reported dependency errors occuring at this stage even after runnign `npm install`. If this is the case, install the missing dependencies listed in the erro manually using `npm install`.
 	
 and a QR code screen should appear in your browser. Then, download the Scanner app from the [App Store](https://itunes.apple.com/us/app/appgyver-scanner/id575076515?mt=8) (iOS) or the [Google Play Store](https://play.google.com/store/apps/details?id=com.appgyver.freshandroid&hl=en) (Android) and use it to scan the QR code. The app will load on your device!
+
+>   Some have reported dependency errors occuring at this stage even after running `npm install`. If this is the case, install the missing dependencies listed in the error manually using `npm install`.
 
 Anyone else who downloads the Scanner app, such as a client or a tester, can also scan the QR code and try the app on their device as well. For more documentaiton on Appgyver Steroids, [look here](https://play.google.com/store/apps/details?id=com.appgyver.freshandroid&hl=en).
 
