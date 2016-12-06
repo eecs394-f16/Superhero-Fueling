@@ -2,6 +2,11 @@
 ![Logo](app/common/assets/images/Title.PNG)
 ### *A way to encourage children to eat better.*
 
+The kids love their superhero! They follow everything their superhero does. So here is the app to encourage kids eat better.
+
+Here is how it goes... The kid starts the app and looks at a list of food choices he can eat. He can select upto 3 food items and see how well can their superhero save the city, eating the food they selected. Healthier choices helps superhero save the day. Bad choices fails to power their superhero. The kids also learn fun facts about their food choices and eat better each time they play the game!!
+
+
 ## Install
 
 Clone this repostory, then
