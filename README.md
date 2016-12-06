@@ -31,13 +31,13 @@ TODO: Explain current status of json file data
 ## Status
 
 The status of the app features implemented are maintained using [our team's Trello Board](https://trello.com/b/GpERMUd6/user-stories
-). More information about Trello on (https://trello.com/home).
+). For more information about Trello, visit [their website](https://trello.com/home).
 
 The completed user story cards are placed under the label "Production". The Product backlog presents the user stories planned for the next version of the app.
 
 ## Team
 
-Team Green :
+This app was created for the Northwestern EECS 213 Fall 2016 Course by Team Green:
 
 1. Aagam Shah
 2. Agam Gupta
