@@ -1,27 +1,36 @@
 angular
   .module('FoodChoice')
   .controller('IndexController', function($scope, supersonic, $http) {
+    // Hide the tabs
     supersonic.ui.tabs.hide();
+    // Initialize an array to store all possible foods
 
     $scope.foodChoices = [];
-
+    // Get the json data locally. Should get from database in futures.
     $http.get('/data/data.json').then(function(response) {
       $scope.foodChoices = response.data;
     });
 
+    // Initialize the objects associated with what foods the user has selected
     $scope.selectedScore = 0;
     $scope.selectedScoreAvg = 0;
     $scope.selected = [];
 
+    // A function to select or deselect food
     $scope.toggleFood = function(id) {
+      // Get the id of the clicked food
       var clickedFood = $scope.foodChoices.find(function(food) {
         return food.id === id;
       });
       
+      //If the food was selected already
       if ($scope.isSelected(clickedFood.id)) {
+        // Deselect it and change the appropriate variables
         $scope.selectedScore -= clickedFood.Value;
         $scope.selected.splice($scope.selected.indexOf(clickedFood.id), 1);
+        // Select it and change the appropriate variables
       } else {
+        // Error if three foods are already selected
         if ($scope.selected.length == 3) {
           var options = {
             message: "You can only select up to 3 foods.",
@@ -47,11 +56,12 @@ angular
       supersonic.ui.navigationBar.update({title: title_str});
   
     };
-
+    // Return true if item is selected
     $scope.isSelected = function(id) {
       return $scope.selected.indexOf(id) != -1;
     };
 
+    // A function to reset selection choices
     $scope.resetChoices = function() {
       $scope.selectedScore = 0;
       $scope.selectedScoreAvg = 0;

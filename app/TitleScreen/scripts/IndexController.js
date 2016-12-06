@@ -6,7 +6,7 @@ angular
     $scope.continue = function() {
       supersonic.ui.initialView.dismiss();
     };
-
+    // Continue after 3 seconds.
     $timeout(function() {
       $scope.timedout = true;
     	}, 3000);
