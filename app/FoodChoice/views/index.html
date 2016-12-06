@@ -5,10 +5,12 @@
     </super-navbar-title>
   </super-navbar>
   <div class="padding">
+    <!-- Populate view with food -->
     <div class="food-div" ng-repeat="item in foodChoices" ng-click="toggleFood(item.id)" >
         <img class="food" ng-src="{{item.URL}}" ng-class="{active : isSelected(item.id)}">
     </div>
 
+    <!-- Create the lets fly button and pass the correct data to the next view -->
     <super-navigate
       ng-show="selected.length != 0"
       location="FlyTime#index?score={{selectedScoreAvg}}&selected0={{selected[0]}}&selected1={{selected[1]}}&selected2={{selected[2]}}"
