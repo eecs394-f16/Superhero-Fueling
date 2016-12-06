@@ -1,5 +1,6 @@
 <div ng-controller="IndexController">
   <!-- The variable in the ng-if is not the variable passed through, but the angular variable defined in the controller -->
+  <!-- Load the correct title base on the score of the selected foods -->
   <div ng-if="carryScore == 0">
   	<div class = "textbox">
       OH NO! YOU FOUND KRYPTONITE! SUPERMAN IS NOW POWERLESS!
@@ -20,7 +21,7 @@
     </div>
     <img class="stills" src="/images/successful-still-card.png" alt="Image not found">
   </div>
-
+  <!-- Populate the view with the selected foods -->
   <p class="touch-food">Touch food to learn more</p>
   
   <div>
