@@ -4,7 +4,7 @@
   	<div class = "textbox">
       OH NO! YOU FOUND KRYPTONITE! SUPERMAN IS NOW POWERLESS!
     </div>
-    <img class="stills" src="/images/Kryptonite.png" alt="Image not found">
+    <img class="stills" src="/images/failSuperman.png" alt="Image not found">
   </div>
 
   <div ng-if="carryScore == 1">
@@ -21,12 +21,26 @@
     <img class="stills" src="/images/successful-still-card.png" alt="Image not found">
   </div>
 
-  <div style="text-align: center;" ng-repeat="item in data">
-    <super-navigate location="foodfacts#index?selectedId={{item.id}}">
-      <img class="food_tile" ng-src="{{ item.URL }}" alt="Image not found">
-      <img class = "food_tile" src="{{ powerImageURL(item.Power) }}" alt="Image not found">
-    </super-navigate>
-    <p style="clear : both;"></p>
+  <p class="touch-food">Touch food to learn more</p>
+  
+  <div>
+    <table>
+      <tr class="align-images">
+        <td class="tab" ng-repeat="item in data">
+          <super-navigate location="foodfacts#index?selectedId={{item.id}}">
+            <img class="food-tile-align" ng-src="{{ item.URL }}" alt="Image not found">
+          </super-navigate>
+        </td>
+      </tr> 
+      <!-- For the power bars -->
+      <tr class="align-images">
+        <td ng-repeat="item in data">
+          <super-navigate location="foodfacts#index?selectedId={{item.id}}">
+            <img class = "food-tile-align" src="{{ powerImageURL(item.Power) }}" alt="Image not found">
+          </super-navigate>
+        </td>
+     </tr> 
+    </table>
   </div>
 
   <div class="bottom-padding"></div>
