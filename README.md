@@ -21,7 +21,7 @@ Anyone else who downloads the Scanner app, such as a client or a tester, can als
 
 ## Deploying to Cloud
 
-The Appgyver cloud functionality makes it simple to share a qr-code via an http link. To push the appgyver application to the cloud, run steroids connect and wait for the screen with the qr code to appear. From here, select "cloud" from the menu on top and click "deploy to cloud." Once this is done, click "open cloud share page." This will redirect you to a sharable html page that you can use to publicize the qr-code.
+The Appgyver cloud functionality makes it simple to share a qr-code via an http link. To deploy the appgyver application to the cloud, run steroids connect and wait for the screen with the qr code to appear. From here, select "cloud" from the menu on top and click "deploy to cloud." Once this is done, click "open cloud share page." This will redirect you to a sharable html page that you can use to publicize the qr-code.
 
 ## Data
 
