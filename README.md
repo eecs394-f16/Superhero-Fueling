@@ -1,5 +1,5 @@
 # Superhero-Fueling
-![Logo](app/common/assets/images/Title.png)
+![Logo](app/common/assets/images/Title.PNG)
 ### *A way to encourage children to eat better.*
 
 ## Install
