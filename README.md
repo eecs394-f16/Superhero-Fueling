@@ -18,7 +18,7 @@ and a QR code screen should appear in your browser. Then, download the Scanner a
 
 >   Some have reported dependency errors occuring at this stage even after running `npm install`. If this is the case, install the missing dependencies listed in the error manually using `npm install`.
 
-Anyone else who downloads the Scanner app, such as a client or a tester, can also scan the QR code and try the app on their device as well. For more documentaiton on Appgyver Steroids, [look here](https://play.google.com/store/apps/details?id=com.appgyver.freshandroid&hl=en).
+Anyone else who downloads the Scanner app, such as a client or a tester, can also scan the QR code and try the app on their device as well. For more documentaiton on Appgyver Steroids, [look here](http://docs.appgyver.com/supersonic/tutorial/first-mile/).
 
 ## Deploying to Cloud
 
@@ -26,9 +26,67 @@ The Appgyver cloud functionality makes it simple to share a qr-code via an http 
 
 ## Data
 
-TODO: Explain current status of json file data
+Currently, the data is stored inside the `app/common/assets/data/data.json` file. The format of the data is as follows:
+
+	[
+	  {
+	    "Name":"apple",
+	    "Fact":"Apple a day will keep Superman energized all day. This food is very low in Saturated Fat, Cholesterol and Sodium. It is also a good source of Dietary Fiber and Vitamin C.",
+	    "Value":5,
+	    "Power":"High",
+	    "SS":"1 cup (110g)",
+	    "Cal":53,
+	    "F_g":0,
+	    "F_s":"Low",
+	    "F_p":0,
+	    "SF_g":0,
+	    "SF_p":0,
+	    "CH_mg":0,
+	    "CH_p":0,
+	    "S_mg":0,
+	    "S_p":0,
+	    "C_g":14,
+	    "C_s":"Medium",
+	    "C_p":0.05,
+	    "P_g":0,
+	    "P_s":"Low",
+	    "EGL":3,
+	    "URL":"/images/apple.png",
+	    "id":1
+	  },
+	  {
+	  	...etc...
+	  }
+	 ]
+	 
+####Keys Explained
+
+* "Name": The name of the food (string)
+* "Fact": Helpful facts associated with the food (string)
+* "Value": Point value associated with the food. Average of all selected food point values determines whether the user sees a successful animation, a falling animation, or a kryptonite image (number).
+* "Power": An indication of how helpful the food is to superman (string: "High", "Medium", or "Low")
+* "SS": Serving size (string)
+* "Cal": Calories (number)
+* "F_g": Fat (number, in grams)
+* "F_s": Fat scale (string: "High", "Medium", or "Low")
+* "F_p": Fat percentage (number)
+* "SF_g": Saturated fat (number, in grams)
+* "SF_p": Saturated fat percentage (number)
+* "CH_mg": Cholesterol (number, in milligrams)
+* "CH_p": Cholesterol percentage (number)
+* "S_mg": Salt (number, in milligrams)
+* "S_p": Salt percentage (number)
+* "C_g": Carbohydrates (number, in grams)
+* "C_s": Carbohydrates scale (string: "High", "Medium", or "Low")
+* "C_p": Carbohydrates percentage (number)
+* "P_g": Protein (number, in grams)
+* "P_s": Protein scale (string: "High", "Medium", or "Low")
+* "EGL": Estimated Glycemic Load (number)
+* "URL": Relative url to the image of the food, used as parameter to `ng-src`.
 
 ## Status
+
+**The active development of Superhero Fueling by Team Green has ceased.**
 
 The status of the app features implemented are maintained using [our team's Trello Board](https://trello.com/b/GpERMUd6/user-stories
 ). For more information about Trello, visit [their website](https://trello.com/home).
@@ -43,9 +101,3 @@ This app was created for the Northwestern EECS 394 Fall 2016 Course by Team Gree
 2. Agam Gupta
 3. Collin Pham
 4. Joon Park
-
-## License
-
-**The MIT License (MIT)**
-
-Copyright &copy; 2016 Northwestern University EECS 394 Fall 2016 Team Green
