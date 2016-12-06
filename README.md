@@ -29,7 +29,11 @@ TODO: Explain current status of json file data
 
 ## Status/Known Issues
 
-TODO: Link to trello 
+The status of the app features implemented are maintained using the Trello Board. More information about Trello on (https://trello.com/home).
+
+The completed user story cards are placed under the label "Production". The Product backlog presents the user stories planned for the next version of the app.
+
+Link to the Trello board : https://trello.com/b/GpERMUd6/user-stories
 
 ## Team
 
